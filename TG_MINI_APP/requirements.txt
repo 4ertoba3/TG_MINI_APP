@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+tortoise-orm
+asyncpg
+aerich
+python-dotenv
+aiogram
+python-multipart
