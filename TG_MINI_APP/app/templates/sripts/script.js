@@ -24,7 +24,8 @@ document.addEventListener("DOMContentLoaded", () => {
         expert1: $("#expert1"),
         expert2: $("#expert2"),
         expert3: $("#expert3"),
-        registration: $("#registration")
+        registration: $("#registration"),
+        login: $("#login")
     };
 
     function showOnly(section) {
@@ -95,6 +96,8 @@ document.addEventListener("DOMContentLoaded", () => {
         [".safe-product-card.holyland .safe-about", sections.home, sections.analize1],
         [".safe-product-card.human .safe-about", sections.home, sections.analize],
         [".personal-account .story-analize .arrow-icon-profile", sections.personal, sections.story],
+        [".registration .divider-if", sections.registration, sections.login],
+        [".login .divider-if", sections.login, sections.registration],
         [".home-page .home-main-content .checked-products-header .arrow-icon", sections.home, sections.story],
         [".home-page .home-main-content .cosmetics-header .arrow-icon", sections.home, sections.cosmetics],
         [".personal-account .support-section .arrow-icon", sections.personal, sections.help],
@@ -124,11 +127,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Регистрация
     const registrationButton = $(".registration-button");
+    const loginButton = $(".login-button");
     const footer = $("#mobile-footer");
 
     registrationButton?.addEventListener("click", e => {
         e.preventDefault();
         if (!registrationButton.classList.contains("active-registration-button")) return;
+
+        showOnly(sections.home);
+        footer?.classList.remove("desactive-page");
+
+    });
+
+    loginButton?.addEventListener("click", e => {
+        e.preventDefault();
+        if (!loginButton.classList.contains("active-login-button")) return;
 
         showOnly(sections.home);
         footer?.classList.remove("desactive-page");

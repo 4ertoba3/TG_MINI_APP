@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <section id="registration" class="registration desactive-page">
+    <section id="registration" class="registration">
         <h2>Добро пожаловать!</h2>
         <p>Введите свои данные для регистрации</p>
         <form>
@@ -19,6 +19,7 @@
             </label>
             <button type="submit" class="registration-button">Зарегистрироваться</button>
         </form>
+        <div class="divider-if">Если есть аккаунт, то войти</div>
         <div class="divider">Или войти через</div>
         <div class="social-login">
             <img src="images/google.svg" alt="Google" />
@@ -29,12 +30,13 @@
 
     <section id="login" class="login desactive-page">
         <h2>Добро пожаловать!</h2>
-        <p>Введите свои данные для регистрации</p>
+        <p>Введите свои данные для входа</p>
         <form>
             <input class="login-input" type="text" placeholder="Имя" />
             <input class="login-input" type="tel" placeholder="Номер телефона" />
             <button type="submit" class="login-button">Войти</button>
         </form>
+        <div class="divider-if">Если нет аккаунта, то зарегистрироваться</div>
         <div class="login-divider">Или войти через</div>
         <div class="social-login">
             <img src="images/google.svg" alt="Google" />
@@ -44,7 +46,7 @@
     </section>
 
     <!-- Главная страница -->
-    <section id="home-page" class="home-page">
+    <section id="home-page" class="home-page desactive-page">
         <header class="header-home-page">
             <div class="profile">
                 <a href="#"><img src="images/profimg.jpg" class="profile-image"></a>
@@ -1739,7 +1741,7 @@
         </main>
     </section>
 
-    <footer id="mobile-footer" class="mobile-footer">
+    <footer id="mobile-footer" class="mobile-footer desactive-page">
         <nav class="footer-nav">
           <button class="footer-button footer-button-home active-footer-button">
             <img src="images/white-home.svg" alt="Главная" class="footer-icon">
