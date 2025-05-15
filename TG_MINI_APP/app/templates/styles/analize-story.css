@@ -1,0 +1,27 @@
+.analize-story {
+    background-color: #F3F2F8;
+}
+
+.analize-story-header {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+    justify-content: center;
+    background-color: #F3F2F8;
+}
+
+.analize-story-header-title {
+    font-size: 32px;
+    font-weight: 510;
+}
+
+.analize-story-content{
+    padding-bottom: 114px;
+}
+
+.search-form-analize-story {
+    width: 345px;
+    margin-left: 16px;
+    margin-bottom: 24px;
+}

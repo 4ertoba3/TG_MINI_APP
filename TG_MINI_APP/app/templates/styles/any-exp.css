@@ -1,0 +1,126 @@
+.expert1,
+.expert2,
+.expert3 {
+    background-color: #F3F2F8;
+    min-height: 836px;
+}
+
+.expert1-header,
+.expert2-header,
+.expert3-header {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+    justify-content: center;
+    background-color: #F3F2F8;
+    margin-bottom: 32px;
+}
+
+.expert1-header-title,
+.expert2-header-title,
+.expert3-header-title {
+    font-size: 32px;
+    font-weight: 510;
+}
+
+.expert1-content, 
+.expert2-content, 
+.expert3-content {
+    padding-bottom: 114px;
+}
+
+.profile-exp1,
+.profile-exp2, 
+.profile-exp3 {
+    padding-left: 16px;
+}
+
+.education h3,
+.work-experience-title h3,
+.facts h3 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 16px;
+    padding-left: 16px;
+  }
+  
+.documents h4,
+.work-experience-title h4 {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: normal;
+    margin: 0;
+    padding-left: 16px;
+  }
+  
+  /* Секция "Образование" */
+  .education {
+    margin-bottom: 24px;
+  }
+  
+  .documents {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* расстояние между "Документы" и "Проверены" */
+  }
+  
+  .documents h4 {
+    font-size: 14px;
+    margin: 0;
+  }  
+  
+  .documents p {
+    background-color: #c9eb46;
+    color: #000;
+    font-size: 12px;
+    padding: 2px 8px;
+    border-radius: 8px;
+    white-space: nowrap;
+  }
+  
+  /* Стрелка */
+  .arrow-icon-documents {
+    padding-right: 16px;
+  }
+  
+  /* Стаж */
+  .work-experience-title {
+    margin-bottom: 24px;
+  }
+  
+  /* Интересные факты */
+  .facts-list {
+    padding-left: 42px;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  
+  .facts-list li {
+    font-size: 14px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+  }
+  
+  .facts {
+    margin-bottom: 24px;
+  }
+  /* Кнопка */
+  .get-cons {
+    width: 361px;
+    margin-left: 16px;
+    background-color: #000;
+    color: white;
+    font-size: 14px;
+    padding: 16px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+  }
+  
+  .get-cons:hover {
+    transform: scale(0.98);
+  }

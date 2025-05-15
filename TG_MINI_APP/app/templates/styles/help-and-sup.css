@@ -1,0 +1,152 @@
+.help-and-supprot-content {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 114px;
+    background-color: #F3F2F8;
+  }
+  
+  .header-help-and-supprot {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-top: 20px;
+    justify-content: center;
+    background-color: #F3F2F8;
+    padding-bottom: 32px;
+  }
+
+  .header-help-and-supprot-title {
+    font-size: 32px;
+    font-weight: 510;
+    text-align: center;
+  }
+
+  /* FAQ */
+
+.FAQ-title {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.FAQ-content .question {
+    background-color: #FBFBFB;
+    border-radius: 12px;
+    padding: 12px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    position: relative;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.question-arrow {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 14px;
+    height: 14px;
+    transition: transform 0.2s ease;
+}
+
+.question-arrow:hover {
+    transform: scale(1.02);
+}
+
+.politics-header {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+/* Техподдержка */
+.tech-supprot-title {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.tech-supprot-desc {
+    font-size: 14px;
+    color: #545454;
+    margin-top: 0;
+    width: 243px;
+}
+
+.tech-supprot-but {
+    background-color: #F3F2F8;
+    border: 1px solid #131313;
+    border-radius: 12px;
+    padding: 8px 12px;
+    font-weight: 500;
+    cursor: pointer;
+    height: 36px;
+    margin-left: auto;
+    transition: transform 0.2s ease;
+}
+
+.tech-supprot-but:hover {
+    transform: scale(0.98);
+}
+
+.tech-supprot-content {
+  display: flex;
+}
+
+/* Остались вопросы */
+.any-quest-title {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 24px;
+    margin-bottom: 0;
+}
+
+.any-quest-desc {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 12px;
+}
+
+.any-quest-subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.any-quest-input-wrapper {
+    margin-bottom: 10px;
+}
+
+.any-quest-input-wrapper.big-input .textarea-input {
+    height: 120px;
+    resize: none;
+}
+
+.any-quest-search-input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    font-size: 14px;
+    border: #000;
+    box-sizing: border-box;
+    background-color: #FBFBFB;
+}
+
+.any-quest-button {
+    width: 100%;
+    padding: 16px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 12px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.any-quest-button:hover {
+    transform: scale(1.02);
+}

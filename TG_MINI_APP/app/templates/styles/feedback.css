@@ -1,0 +1,131 @@
+.feedback {
+    background-color: #F3F2F8;
+}
+
+.feedback-header {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+    justify-content: center;
+    background-color: #F3F2F8;
+    margin-bottom: 32px;
+}
+
+.feedback-header-title {
+    font-size: 32px;
+    font-weight: 510;
+    text-align: center;
+}
+
+.feedback-content{
+    padding-bottom: 114px;
+}
+
+.feedback-opiton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.feedback-filter {
+  display: flex;
+  align-items: center;
+  background-color: #FBFBFB;
+  border-radius: 12px;
+  padding: 6px 12px;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0px 0px 16px 0px #0B00000A;
+  margin-left: 16px;
+  transition: transform 0.2s ease;
+}
+
+.feedback-filter:hover {
+    transform: scale(1.02);
+}
+
+.feedback-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+}
+
+.feedback-opiton a {
+  color: #131313;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+  margin-right: 16px;
+}
+
+.feedback-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.feedback-card {
+  background-color: #FBFBFB;
+  border-radius: 12px;
+  padding: 12px 12px 0;
+  box-shadow: 0px 0px 16px 0px #0B00000A;
+  margin: 0 16px;
+}
+
+.feedback-profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.profile-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 8px;
+}
+
+.feedback-profile-text {
+  flex-grow: 1;
+}
+
+.feedback-name {
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0;
+  margin-bottom: 4px;
+}
+
+.feedback-date {
+  font-size: 14px;
+  color: #545454;
+  margin: 0;
+}
+
+.feedback-rate {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  gap: 4px;
+}
+
+.feedback-star {
+  width: 16px;
+  height: 16px;
+}
+
+.feedback-description {
+  font-size: 14px;
+  line-height: 20px;
+  width: 300px;
+}
+
+.feedback-text {
+  margin: 6px 0;
+}

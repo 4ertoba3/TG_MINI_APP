@@ -1,0 +1,133 @@
+.analize-pagephoto,
+.analize-pagetext {
+    background-color: #F3F2F8;
+    padding-bottom: 262px;
+}
+
+.analize-pagephoto-header,
+.analize-pagetext-header {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+    justify-content: center;
+    background-color: #F3F2F8;
+    margin-bottom: 22px;
+}
+
+.analize-pagephoto-header-title,
+.analize-pagetext-header-title {
+    font-size: 32px;
+    font-weight: 510;
+}
+
+.analize-pagephoto-content,
+.analize-pagetext-content {
+    padding-bottom: 114px;
+}
+
+.analize-pagephoto-title {
+  font-size: 20px;
+  font-weight: 400;
+  color: #131313;
+  margin-bottom: 0;
+  margin-bottom: 16px;
+  padding-left: 16px;
+}
+
+.analize-pagephoto-list {
+  padding-left: 32px;
+  margin: 0;
+  list-style-type: decimal;
+  margin-bottom: 24px;
+}
+
+.analize-pagephoto-item {
+  font-size: 16px;
+  color: #545454;
+  line-height: 20px;
+  margin-bottom: 12px;
+}
+
+.analize-pagephoto-choise {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding-left: 16px;
+  margin-bottom: 24px;
+}
+
+.analize-pagephoto-button {
+  display: flex;
+  align-items: center;
+  border: 1px solid #131313;
+  border-radius: 12px;
+  padding: 8px 12px;
+  cursor: pointer;
+  background-color: #F3F2F8;
+  transition: transform 0.2s ease;
+}
+
+.analize-pagephoto-button:hover {
+    transform: scale(1.02);
+}
+
+.analize-pagephoto-text-button {
+  font-size: 16px;
+  font-weight: 500;
+  color: #131313;
+  margin: 0;
+}
+
+.analize-pagephoto-button-image {
+  width: 16px;
+  height: 16px;
+  margin-left: 27px;
+}
+
+.analize-pagephoto-button-camera {
+    margin-left: auto;
+    margin-right: 16px;
+}
+
+.analize-sostav-photo,
+.analize-sostav-text {
+  width: 100%;
+  max-width: 360px;
+  padding: 16px 0;
+  background-color: #131313;
+  color: #FBFBFB;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-left: 16px;
+  transition: transform 0.2s ease;
+}
+
+.analize-sostav-photo:hover,
+.analize-sostav-text:hover {
+    transform: scale(1.02);
+}
+
+.analize-pagetext-input-wrapper {
+    margin-bottom: 24px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.analize-pagetext-input-wrapper.big-input .analize-pagetext-textarea-input {
+    height: 120px;
+    resize: none;
+}
+
+.analize-pagetext-search-input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    font-size: 14px;
+    border: #000;
+    box-sizing: border-box;
+    background-color: #FBFBFB;
+}

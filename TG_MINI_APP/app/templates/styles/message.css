@@ -1,0 +1,92 @@
+.messages {
+    background-color: #F3F2F8;
+    min-height: 836px;
+}
+
+.messages-header {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+    justify-content: center;
+    background-color: #F3F2F8;
+}
+
+.messages-header-title {
+    font-size: 32px;
+    font-weight: 510;
+}
+
+.messages-content{
+    padding-bottom: 114px;
+}
+
+.chats-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    background-color: #f5f5fa;
+    font-family: "Arial", sans-serif;
+  }
+  
+  .chat {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 12px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+    cursor: pointer;
+  }
+
+  .chat:hover {
+    transform: scale(0.98);
+  }
+  
+  .expert-chat {
+    display: flex;
+    align-items: center;
+  }
+  
+  .exp-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+  }
+  
+  .profile-text {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .name-exp {
+    margin: 0;
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+  
+  .last-message {
+    margin: 0;
+    font-size: 14px;
+    color: #545454;
+  }
+  
+  .chek-mess {
+    width: 18px;
+    height: 18px;
+    margin-left: auto;
+    margin-right: 8px;
+    margin-bottom: auto;
+  }
+  
+  .time {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: auto;
+}

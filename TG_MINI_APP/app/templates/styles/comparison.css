@@ -1,0 +1,112 @@
+.comparison {
+    background-color: #F3F2F8;
+    padding-bottom: 262px;
+}
+
+.comparison-header {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+    justify-content: center;
+    background-color: #F3F2F8;
+    margin-bottom: 22px;
+}
+
+.comparison-header-title {
+    font-size: 32px;
+    font-weight: 510;
+}
+
+.comparison-content{
+    padding-bottom: 114px;
+}
+
+.comparison-text {
+    font-size: 16px;
+    padding-left: 16px;
+}
+
+.first-sostav,
+.second-sostav {
+  margin-bottom: 25px;
+  padding-left: 16px;
+}
+
+.first-sostav-title,
+.second-sostav-title {
+  font-size: 20px;
+  font-weight: 400;
+  color: #131313;
+  margin: 0 0 16px;
+}
+
+.first-sostav-choise,
+.second-sostav-choise {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.first-sostav-button,
+.second-sostav-button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid #131313;
+  border-radius: 12px;
+  padding: 8px 12px;
+  cursor: pointer;
+  background-color: #F3F2F8;
+  transition: transform 0.2s ease;
+}
+
+.first-sostav-button:hover,
+.second-sostav-button:hover {
+    transform: scale(1.02);
+}
+
+.first-sostav-text-button,
+.second-sostav-text-button {
+  font-size: 16px;
+  font-weight: 500;
+  color: #131313;
+  margin: 0;
+}
+
+.first-sostav-button-image,
+.second-sostav-button-image {
+  width: 16px;
+  height: 16px;
+  margin-left: 17px;
+}
+
+.comparison-sostav-button {
+  width: 100%;
+  max-width: 360px;
+  margin-left: 16px;
+  padding: 16px 0;
+  background-color: #ADADAD;
+  color: #545454;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.active-comparison-button {
+    background-color: #131313;
+    color: #FBFBFB;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.active-comparison-button:hover {
+    transform: scale(1.02);
+}
+
+.desactive-button {
+    border: 1px solid #ADADAD;
+    color: #ADADAD;
+}

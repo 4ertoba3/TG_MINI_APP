@@ -7,6 +7,42 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <section id="registration" class="registration desactive-page">
+        <h2>Добро пожаловать!</h2>
+        <p>Введите свои данные для регистрации</p>
+        <form>
+            <input type="text" placeholder="Имя" />
+            <input type="tel" placeholder="Номер телефона" />
+            <label class="consent">
+            <input type="checkbox" />
+            Даю согласие на обработку данных
+            </label>
+            <button type="submit" class="registration-button">Зарегистрироваться</button>
+        </form>
+        <div class="divider">Или войти через</div>
+        <div class="social-login">
+            <img src="images/google.svg" alt="Google" />
+            <img src="images/apple.svg" alt="Apple" />
+            <img src="images/vk.svg" alt="VK" />
+        </div>
+    </section>
+
+    <section id="login" class="login desactive-page">
+        <h2>Добро пожаловать!</h2>
+        <p>Введите свои данные для регистрации</p>
+        <form>
+            <input class="login-input" type="text" placeholder="Имя" />
+            <input class="login-input" type="tel" placeholder="Номер телефона" />
+            <button type="submit" class="login-button">Войти</button>
+        </form>
+        <div class="login-divider">Или войти через</div>
+        <div class="social-login">
+            <img src="images/google.svg" alt="Google" />
+            <img src="images/apple.svg" alt="Apple" />
+            <img src="images/vk.svg" alt="VK" />
+        </div>
+    </section>
+
     <!-- Главная страница -->
     <section id="home-page" class="home-page">
         <header class="header-home-page">
@@ -99,7 +135,7 @@
                         <img class="img-cosmetics" src="images/krem.png" alt="Изображение косметики">
                         <a href="#" class="like"><img class="img-like" src="images/like.svg" alt="Иконка лайка"></a>
                         <div class="product-details">
-                            <h4 class="product-name">Крем для лица</p>
+                            <h4 class="product-name">Крем для лица</h4>
                             <p class="product-description">The Act с витамином C</p>
                             <p class="safety-rating">Безопасность: 89%</p>
                         </div>           
@@ -108,7 +144,7 @@
                         <img class="img-cosmetics" src="images/rumina.png" alt="Изображение косметики">
                         <a href="#" class="like"><img class="img-like" src="images/like.svg" alt="Иконка лайка"></a>
                         <div class="product-details">
-                            <h4 class="product-name">Рассыпчатые румяна для лица</p>
+                            <h4 class="product-name">Рассыпчатые румяна для лица</h4>
                             <p class="product-description">Belka mineral</p>
                             <p class="safety-rating">Безопасность: 100%</p>
                         </div>           
@@ -117,7 +153,7 @@
                         <img class="img-cosmetics" src="images/tonal.png" alt="Изображение косметики">
                         <a href="#" class="like"><img class="img-like" src="images/like.svg" alt="Иконка лайка"></a>
                         <div class="product-details">
-                            <h4 class="product-name">Тональная основа для лица</p>
+                            <h4 class="product-name">Тональная основа для лица</h4>
                             <p class="product-description">Artdeco Perfect matte serum foundation</p>
                             <p class="safety-rating">Безопасность: 68%</p>
                         </div>           
@@ -126,6 +162,42 @@
             </div>
         </main>       
     </section>
+
+    <div id="modal-filter" class="modal-filter modal-desactive">
+        <section id="home-search-filter" class="home-search-filter desactive-page">
+            <div class="filter-close">
+                <img src="images/close-icon.svg" alt="Закрыть" class="close-icon">
+            </div>
+            <div class="filter-container">
+                <div class="filter-group">
+                    <h3>Поиск по компонентам</h3>
+                    <label><input type="radio" name="components"> В алфавитном порядке</label>
+                    <label><input type="radio" name="components"> Самые безопасные</label>
+                    <label><input type="radio" name="components"> Самые опасные</label>
+                </div>
+                <div class="filter-group">
+                    <h3>Поиск по брендам</h3>
+                    <label><input type="radio" name="brands"> В алфавитном порядке</label>
+                    <label><input type="radio" name="brands"> Самые безопасные</label>
+                    <label><input type="radio" name="brands"> Самые опасные</label>
+                </div>
+                <div class="filter-group">
+                    <h3>Поиск по продукту</h3>
+                    <label><input type="radio" name="products"> В алфавитном порядке</label>
+                    <label><input type="radio" name="products"> Самые безопасные</label>
+                    <label><input type="radio" name="products"> Самые опасные</label>
+                </div>
+                <div class="filter-group">
+                    <h3>Поиск по экспертам</h3>
+                    <label><input type="checkbox" name="experts" value="derm"> Дерматолог</label>
+                    <label><input type="checkbox" name="experts" value="aller"> Аллерголог</label>
+                    <label><input type="checkbox" name="experts" value="cosm"> Косметолог</label>
+                </div>
+                <button class="apply-button">Применить</button>
+            </div>
+        </section>
+    </div>
+
 
     <section id="personal-account" class="personal-account desactive-page">
         <header class="header-personal-account">
@@ -191,6 +263,62 @@
         </main>
     </section>
 
+    <section id="help-and-supprot" class="help-and-supprot desactive-page">
+        <header class="header-help-and-supprot">
+            <a href="#"><img src="images/arrow-left.svg" alt="Иконка стрелки" class="arrow-icon arrow-icon-left"></a>
+            <h2 class="header-help-and-supprot-title">Справка<br> и поддержка</h2>
+        </header>
+        <main class="help-and-supprot-content">
+            <div class="FAQ">
+                <h3 class="FAQ-title">FAQ</h3>
+                <div class="FAQ-content">
+                    <div class="question">
+                        Как проверить состав косметического средства?
+                        <img src="images/arrow-bot.svg" alt="Стрелка вниз" class="question-arrow">
+                    </div>
+                    <div class="question">
+                        Что такое безопасность?
+                        <img src="images/arrow-bot.svg" alt="Стрелка вниз" class="question-arrow">
+                    </div>
+                    <div class="question">
+                        Как добавить косметическое средство в избранное
+                        <img src="images/arrow-bot.svg" alt="Стрелка вниз" class="question-arrow">
+                    </div>
+                </div>
+            </div>
+            <div class="politics">
+                <h3 class="politics-header">Политика конфиденциальности</h3>
+                <a href="#" class="arrow-icon-profile"><img src="images/arrow-right.svg" alt="Иконка стрелки" class="arrow-icon"></a>
+            </div>
+            <div class="tech-supprot">
+                <h3 class="tech-supprot-title">Техподдержка</h3>
+                <div class="tech-supprot-content">
+                    <p class="tech-supprot-desc">С удовольствием поможем Вам с 8:00 до 18:00 (Мск)</p>
+                    <button class="tech-supprot-but">Позвонить</button>
+                </div>
+            </div>
+            <div class="any-quest">
+                <h3 class="any-quest-title">Остались вопросы?</h3>
+                <p class="any-quest-desc">Если у вас возникли вопросы о работе нашего<br> сервиса — напишите нам! Наша команда<br> специалистов всегда рада помочь.</p>
+                <form class="any-quest-form" action="#" method="post">
+                    <h4 class="any-quest-subtitle">Как к вам обращаться?</h4>
+                    <div class="any-quest-input-wrapper">
+                        <input type="text" name="username" placeholder="Имя" class="any-quest-search-input">
+                    </div>
+                    <h4 class="any-quest-subtitle">Номер телефона</h4>
+                    <div class="any-quest-input-wrapper">
+                        <input type="tel" name="phone" placeholder="+7 999 999 99 99" class="any-quest-search-input">
+                    </div>
+                    <h4 class="any-quest-subtitle">Ваш вопрос</h4>
+                    <div class="any-quest-input-wrapper big-input">
+                        <textarea name="question" placeholder="Вопросы, комментарии, предложения" class="any-quest-search-input textarea-input"></textarea>
+                    </div>
+                    <button type="submit" class="any-quest-button">Отправить</button>
+                </form>
+            </div>
+        </main>
+    </section>
+
     <section id="favorite" class="favorite desactive-page">
         <header class="favorite-header">
             <a href="#"><img src="images/arrow-left.svg" alt="Иконка стрелки" class="arrow-icon arrow-icon-left"></a>
@@ -205,7 +333,7 @@
             </form>
             <div class="cards-container">
                 <div class="card">
-                    <img src="images/trashcan.svg" alt="Удалить" class="delete-icon">
+                    <img src="images/trashcan.svg" alt="Удалить" class="fav-delete-icon">
                     <h4 class="product-name">Крем для лица</h4>
                     <p class="product-description">The Act с витамином C</p>
                     <div class="safety">Безопасность: 89%</div>
@@ -223,7 +351,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="images/trashcan.svg" alt="Удалить" class="delete-icon">
+                    <img src="images/trashcan.svg" alt="Удалить" class="fav-delete-icon">
                     <h4 class="product-name">Рассыпчатые румяна для лица</h4>
                     <p class="product-description">Belka mineral</p>
                     <div class="safety">Безопасность: 100%</div>
@@ -241,6 +369,108 @@
                     </div>
                 </div>
                 <div class="card">
+                    <img src="images/trashcan.svg" alt="Удалить" class="fav-delete-icon">
+                    <h4 class="product-name">Тональная основа для лица</h4>
+                    <p class="product-description">Artdeco Perfect matte serum foundation</p>
+                    <div class="safety">Безопасность: 68%</div>
+                    <div class="card-bottom">
+                        <img src="images/tonal.png" alt="Artdeco Perfect" class="product-thumb">
+                        <div class="card-description">
+                            <div class="ingredients">
+                                Aqua (water), dimethicone, trimethylsiloxysilicate, isohexadecane, synthetic fluorphlogopite, butylene glycol, caprylyl dimethicone ethoxy glucoside, methyl trimethicone, sorbitan isostearate, vinyl dimethicone/methicone silsesquioxane crosspolymer, polysilicone-11, aluminum/magnesium hydroxide stearate, sodium chloride, phenoxyethanol, caprylic/capric triglyceride, glycerin, potassium sorbate, sodium dehydroacetate, tocopheryl acetate, parfum (fragrance), lauryl dimethicone, phytic acid, solanum melongena (eggplant) fruit extract, rosa hybrid flower extract, geraniol, methyl benzoate, citral, benzyl salicylate, benzyl benzoate, linalool, benzyl alcohol, citronellol, hydroxycitronellal, ci 77491 (iron oxides), ci 77492 (iron oxides), ci 77499 (iron oxides), ci 77891 (titanium dioxide).
+                            </div>
+                            <div class="analysis-result">
+                                <p>Результат анализа</p>
+                                <img src="images/white-right-arrow.svg" alt="Стрелка" class="arrow-icon">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <div id="modal-del-fav" class="modal-del-fav modal-desactive">
+        <section class="modal-content desactive-page">
+            <img src="images/close-icon.svg" class="close" id="closeModal"></img>
+            <h2>Внимание!</h2>
+            <p>Удалить <strong>Belka mineral</strong><br>из избранного?</p>
+            <div class="modal-actions">
+                <button class="delete" id="deleteBtn">Удалить</button>
+                <button class="cancel" id="cancelBtn">Отмена</button>
+            </div>
+        </section>
+    </div>
+
+    <div id="modal-del-story" class="modal-del-story modal-desactive">
+        <section class="modal-content desactive-page">
+            <img src="images/close-icon.svg" class="close" id="closeModal"></img>
+            <h2>Внимание!</h2>
+            <p>Удалить <strong>Belka mineral</strong><br>из истории анализа?</p>
+            <div class="modal-actions">
+                <button class="delete" id="deleteBtn">Удалить</button>
+                <button class="cancel" id="cancelBtn">Отмена</button>
+            </div>
+        </section>
+    </div>
+
+    <section id="analize-story" class="analize-story desactive-page">
+        <header class="analize-story-header">
+            <a href="#"><img src="images/arrow-left.svg" alt="Иконка стрелки" class="arrow-icon arrow-icon-left"></a>
+            <div class="analize-story-header-title">История анализа</div>
+        </header>
+        <main class="analize-story-content">
+            <form class="search-form search-form-analize-story" action="#" method="get">
+                <div class="input-wrapper">
+                <img src="images/search.svg" alt="Search Icon" class="search-icon">
+                <input type="text" name="search" placeholder="Поиск по истории анализа" class="search-input">
+                </div>
+            </form>
+            <div class="cards-container">
+                <div>
+                    <div id="modal-del-story" class="card">
+                        <time class="cards-time">24.02.2025</time>
+                        <img src="images/trashcan.svg" alt="Удалить" class="delete-icon">
+                        <h4 class="product-name">Крем для лица</h4>
+                        <p class="product-description">The Act с витамином C</p>
+                        <div class="safety">Безопасность: 89%</div>
+                        <div class="card-bottom">
+                            <img src="images/krem.png" alt="The Act с витамином C" class="product-thumb">
+                            <div class="card-description">
+                                <div class="ingredients">
+                                    Aqua (Water), Caprylic/Capric Triglyceride, Cetearyl Olivate, Sorbitan Olivate, Coco-Caprylate/Caprate, Glyceryl Stearate, Ethylhexyl Stearate, Simmondsia Chinensis (Jojoba) Seed Oil, Ascorbyl Tetraisopalmitate, Glycerin, Ceramide NP, Ceramide AP, Ceramide EOP, Phytosphingosine, Cholesterol, Trehalose, Persea Gratissima (Avocado) Fruit Extract, Rubus Chamaemorus (Cloudberry) Fruit Extract, Centaurea Cyanus (Cornflower) Flower Extract, Citrus Sinensis (Orange) Peel Extract, Vitis Vinifera (Grape) Seed Extract, Betaine, Allantoin, Linoleic Acid, Linolenic Acid, Rosmarinus Officinalis (Rosemary) Extract, Tocopheryl Acetate, Retinyl Acetate, Sodium Acrylate/Sodium Acryloyldimethyl Taurate Copolymer, Sodium Lauroyl Lactylate, Carbomer, Xanthan Gum, Phenoxyethanol, Ethylhexylglycerin, Fragrance, Citric Acid, Tetrasodium Glutamate Diacetate.
+                                </div>
+                                <div class="analysis-result">
+                                    <p>Результат анализа</p>
+                                    <img src="images/white-right-arrow.svg" alt="Стрелка" class="arrow-icon">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div id="modal-del-story" class="card">
+                        <time class="cards-time">15.01.2025</time>
+                        <img src="images/trashcan.svg" alt="Удалить" class="delete-icon">
+                        <h4 class="product-name">Рассыпчатые румяна для лица</h4>
+                        <p class="product-description">Belka mineral</p>
+                        <div class="safety">Безопасность: 100%</div>
+                        <div class="card-bottom">
+                            <img src="images/rumina.png" alt="Belka mineral" class="product-thumb">
+                            <div class="card-description">
+                                <div class="ingredients">
+                                    Mica, Boron Nitride, Magnesium Stearate, [+/- Iron Oxides (77492, 77491), Manganese Violet (77742), Titanium Dioxide (77891), Carmine (75470)].
+                                </div>
+                                <div class="analysis-result">
+                                    <p>Результат анализа</p>
+                                    <img src="images/white-right-arrow.svg" alt="Стрелка" class="arrow-icon">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="modal-del-story" class="card">
+                    <time class="cards-time">15.01.2025</time>
                     <img src="images/trashcan.svg" alt="Удалить" class="delete-icon">
                     <h4 class="product-name">Тональная основа для лица</h4>
                     <p class="product-description">Artdeco Perfect matte serum foundation</p>
@@ -275,13 +505,13 @@
                     <input type="text" name="search" placeholder="Поиск эксперта" class="search-input">
                   </div>
                 </form>
-                <a href="#" class="clear-search">
+                <a href="#" class="clear-search-exp">
                   <img src="images/filter.svg" alt="Clear Icon" class="clear-icon">
                 </a>
             </div>
             <p class="first-cons">Чтобы получить консультацию впервые,<br> необходимо выбрать эксперта</p>
             <div class="cards-container">
-                <div class="card card1">
+                <div class="card card2">
                     <h4 class="product-name">Врач-косметолог</h4>
                     <p class="product-description">Елена</p>
                     <div class="work-experience">Стаж работы: 15 лет</div>
@@ -300,7 +530,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card card2">
+                <div class="card card1">
                     <h4 class="product-name">Врач-дерматолог</h4>
                     <p class="product-description">Дмитрий</p>
                     <div class="work-experience">Стаж работы: 23 года</div>
@@ -339,6 +569,30 @@
             </div>
         </main>
     </section>
+
+    <div id="modal-filter-exp" class="modal-filter-exp modal-desactive">
+        <section id="exp-search-filter" class="exp-search-filter desactive-page">
+            <div class="filter-close-exp">
+                <img src="images/close-icon.svg" alt="Закрыть" class="close-icon">
+            </div>
+            <div class="filter-container">
+                <div class="filter-group">
+                    <h3>Специальность</h3>
+                    <label><input type="checkbox" name="experts" value="derm"> Дерматолог</label>
+                    <label><input type="checkbox" name="experts" value="aller"> Аллерголог</label>
+                    <label><input type="checkbox" name="experts" value="cosm"> Косметолог</label>
+                </div>
+                <div class="filter-group">
+                    <h3>Стаж работы</h3>
+                    <label><input type="checkbox" name="experts" value="derm"> 1-3 года</label>
+                    <label><input type="checkbox" name="experts" value="aller"> 3-5 лет</label>
+                    <label><input type="checkbox" name="experts" value="cosm"> 5-8 лет</label>
+                    <label><input type="checkbox" name="experts" value="cosm"> Более 8 лет</label>
+                </div>
+                <button class="apply-button">Применить</button>
+            </div>
+        </section>
+    </div>
 
     <section id="messages" class="messages desactive-page">
         <header class="messages-header">
@@ -416,7 +670,1076 @@
         </main>
     </section>
 
-    <footer class="mobile-footer">
+    <section id="expert2" class="expert2 desactive-page">
+        <header class="expert2-header">
+            <a href="#"><img src="images/arrow-left.svg" alt="Иконка стрелки" class="arrow-icon arrow-icon-left"></a>
+            <div class="expert2-header-title">Эксперт</div>
+        </header>
+        <main class="expert2-content">
+            <div class="profile profile-exp2">
+                <img src="images/doctor-women.png" class="profile-image">
+                <div class="profile-text">
+                    <p class="hello-text">Елена</p>
+                    <p class="love-details">Врач-косметолог</p>
+                </div>
+            </div>
+            <div class="education">
+                <h3>Образование:</h3>
+                <div class="documents">
+                    <h4>Документы</h4>
+                    <p>Проверены</p>
+                    <a href="#" class="arrow-icon-profile"><img src="images/arrow-right.svg" alt="Иконка стрелки" class="arrow-icon arrow-icon-documents"></a>
+                </div>
+            </div>
+            <div class="work-experience-title">
+                <h3>Стаж работы:</h3>
+                <h4>15 лет</h4>
+            </div>
+            <div class="facts">
+                <h3>Интересные факты:</h3>
+                <ul class="facts-list">
+                    <li>Разработал уникальную методику терапии экземы, которая продемонстрировала 85% эффективность у пациентов;</li>
+                    <li>Опубликовал более 20 статей в международных медицинских журналах;</li>
+                    <li>Внедрил новую программу для пациентов с псориазом, которая помогла 200 людям достичь ремиссии.</li>
+                </ul>
+            </div>
+            <button class="get-cons">Получить консультацию</button>
+        </main>
+    </section>
+
+    <section id="expert3" class="expert3 desactive-page">
+        <header class="expert3-header">
+            <a href="#"><img src="images/arrow-left.svg" alt="Иконка стрелки" class="arrow-icon arrow-icon-left"></a>
+            <div class="expert3-header-title">Эксперт</div>
+        </header>
+        <main class="expert3-content">
+            <div class="profile profile-exp3">
+                <img src="images/doctor-men2.png" class="profile-image">
+                <div class="profile-text">
+                    <p class="hello-text">Константин</p>
+                    <p class="love-details">Врач-аллерголог</p>
+                </div>
+            </div>
+            <div class="education">
+                <h3>Образование:</h3>
+                <div class="documents">
+                    <h4>Документы</h4>
+                    <p>Проверены</p>
+                    <a href="#" class="arrow-icon-profile"><img src="images/arrow-right.svg" alt="Иконка стрелки" class="arrow-icon arrow-icon-documents"></a>
+                </div>
+            </div>
+            <div class="work-experience-title">
+                <h3>Стаж работы:</h3>
+                <h4>8 лет</h4>
+            </div>
+            <div class="facts">
+                <h3>Интересные факты:</h3>
+                <ul class="facts-list">
+                    <li>Разработал уникальную методику терапии экземы, которая продемонстрировала 85% эффективность у пациентов;</li>
+                    <li>Опубликовал более 20 статей в международных медицинских журналах;</li>
+                    <li>Внедрил новую программу для пациентов с псориазом, которая помогла 200 людям достичь ремиссии.</li>
+                </ul>
+            </div>
+            <button class="get-cons">Получить консультацию</button>
+        </main>
+    </section>
+
+    <section id="safe-cosmetics" class="safe-cosmetics desactive-page">
+        <header class="safe-cosmetics-header">
+            <a href="#"><img src="images/arrow-left.svg" alt="Иконка стрелки" class="arrow-icon arrow-icon-left"></a>
+            <div class="safe-cosmetics-header-title">Безопасная<br> косметика</div>
+        </header>
+        <main class="safe-cosmetics-content">
+            <form class="search-form search-form-safe-cosmetics" action="#" method="get">
+                <div class="input-wrapper">
+                <img src="images/search.svg" alt="Search Icon" class="search-icon">
+                <input type="text" name="search" placeholder="Поиск" class="search-input">
+                </div>
+            </form>
+            <div class="cosmetic-sidebar">
+                <div class="cosmetic-sidebar-item">
+                    <img class="cosmetic-sidebar-img" src="images/krem1.png">
+                    <p class="cosmetic-sidebar-desc">Крема</p>
+                </div>
+                <div class="cosmetic-sidebar-item">
+                    <img class="cosmetic-sidebar-img" src="images/shamp.png">
+                    <p class="cosmetic-sidebar-desc">Шампуни</p>
+                </div>
+                <div class="cosmetic-sidebar-item">
+                    <img class="cosmetic-sidebar-img" src="images/pomada.png">
+                    <p class="cosmetic-sidebar-desc">Помады</p>
+                </div>
+                <div class="cosmetic-sidebar-item">
+                    <img class="cosmetic-sidebar-img" src="images/pudra.png">
+                    <p class="cosmetic-sidebar-desc">Пудры</p>
+                </div>
+                <div class="cosmetic-sidebar-item">
+                    <img class="cosmetic-sidebar-img" src="images/glitter.png">
+                    <p class="cosmetic-sidebar-desc">Глиттеры</p>
+                </div>
+                <div class="cosmetic-sidebar-item">
+                    <img class="cosmetic-sidebar-img" src="images/podvodka.png">
+                    <p class="cosmetic-sidebar-desc">Подподки</p>
+                </div>
+                <div class="cosmetic-sidebar-item">
+                    <img class="cosmetic-sidebar-img" src="images/bronzer.png">
+                    <p class="cosmetic-sidebar-desc">Бронзеры</p>
+                </div>
+                <div class="cosmetic-sidebar-item">
+                    <img class="cosmetic-sidebar-img" src="images/rumina1.png">
+                    <p class="cosmetic-sidebar-desc">Румяна</p>
+                </div>
+                <div class="cosmetic-sidebar-item">
+                    <img class="cosmetic-sidebar-img" src="images/hightlight.png">
+                    <p class="cosmetic-sidebar-desc">Хайлайтеры</p>
+                </div>
+                <div class="cosmetic-sidebar-item">
+                    <img class="cosmetic-sidebar-img" src="images/tonkrem.png">
+                    <p class="cosmetic-sidebar-desc">Тональные крема</p>
+                </div>
+            </div>
+            <div class="safe-products-list">
+                <div class="safe-product-card crem">
+                    <img class="safe-img-cosmetics" src="images/cherry.png" alt="Изображение косметики">
+                    <a href="#" class="like"><img class="img-like" src="images/like.svg" alt="Иконка лайка"></a>
+                    <div class="safe-product-details">
+                        <h4 class="safe-product-name">Крем для рук и тела</h4>
+                        <p class="safe-product-description">LABORATORIUM Вишневый пирог</p>
+                        <div class="safe-about">
+                            <p>Подробнее</p>
+                            <img src="images/white-right-arrow.svg" alt="Стрелка" class="arrow-icon">
+                        </div>
+                    </div>           
+                </div>
+                <div class="safe-product-card crem">
+                    <img class="safe-img-cosmetics" src="images/krem.png" alt="Изображение косметики">
+                    <a href="#" class="like"><img class="img-like" src="images/like.svg" alt="Иконка лайка"></a>
+                    <div class="safe-product-details">
+                        <h4 class="safe-product-name">Крем для лица</h4>
+                        <p class="safe-product-description">The Act с витамином C</p>
+                        <div class="safe-about">
+                            <p>Подробнее</p>
+                            <img src="images/white-right-arrow.svg" alt="Стрелка" class="arrow-icon">
+                        </div>
+                    </div>           
+                </div>
+                <div class="safe-product-card crem">
+                    <img class="safe-img-cosmetics" src="images/comfort.png" alt="Изображение косметики">
+                    <a href="#" class="like"><img class="img-like" src="images/like.svg" alt="Иконка лайка"></a>
+                    <div class="safe-product-details">
+                        <h4 class="safe-product-name">Крем для тела</h4>
+                        <p class="safe-product-description">Comfort zone Tranquillity body</p>
+                        <div class="safe-about">
+                            <p>Подробнее</p>
+                            <img src="images/white-right-arrow.svg" alt="Стрелка" class="arrow-icon">
+                        </div>
+                    </div>           
+                </div>
+                <div class="safe-product-card crem holyland">
+                    <img class="safe-img-cosmetics" src="images/holyland.png" alt="Изображение косметики">
+                    <a href="#" class="like"><img class="img-like" src="images/like.svg" alt="Иконка лайка"></a>
+                    <div class="safe-product-details">
+                        <h4 class="safe-product-name">Крем SPF 30 с тоном</h4>
+                        <p class="safe-product-description">Holy Land SUNBRELLA DEMI MAKE-UP</p>
+                        <div class="safe-about">
+                            <p>Подробнее</p>
+                            <img src="images/white-right-arrow.svg" alt="Стрелка" class="arrow-icon">
+                        </div>
+                    </div>           
+                </div>
+                <div class="safe-product-card crem">
+                    <img class="safe-img-cosmetics" src="images/adeleide.png" alt="Изображение косметики">
+                    <a href="#" class="like"><img class="img-like" src="images/like.svg" alt="Иконка лайка"></a>
+                    <div class="safe-product-details">
+                        <h4 class="safe-product-name">Крем для рук</h4>
+                        <p class="safe-product-description">ADELEIDE UREA 30%</p>
+                        <div class="safe-about">
+                            <p>Подробнее</p>
+                            <img src="images/white-right-arrow.svg" alt="Стрелка" class="arrow-icon">
+                        </div>
+                    </div>           
+                </div>
+                <div class="safe-product-card crem">
+                    <img class="safe-img-cosmetics" src="images/aloe.png" alt="Изображение косметики">
+                    <a href="#" class="like"><img class="img-like" src="images/like.svg" alt="Иконка лайка"></a>
+                    <div class="safe-product-details">
+                        <h4 class="safe-product-name">Крем SPF 50+</h4>
+                        <p class="safe-product-description">Holika Holika Aloe Waterproof Sun</p>
+                        <div class="safe-about">
+                            <p>Подробнее</p>
+                            <img src="images/white-right-arrow.svg" alt="Стрелка" class="arrow-icon">
+                        </div>
+                    </div>           
+                </div>
+                <div class="safe-product-card crem">
+                    <img class="safe-img-cosmetics" src="images/cofe.png" alt="Изображение косметики">
+                    <a href="#" class="like"><img class="img-like" src="images/like.svg" alt="Иконка лайка"></a>
+                    <div class="safe-product-details">
+                        <h4 class="safe-product-name">Крем для рук и тела</h4>
+                        <p class="safe-product-description">LABORATORIUM Кофе с пончиками</p>
+                        <div class="safe-about">
+                            <p>Подробнее</p>
+                            <img src="images/white-right-arrow.svg" alt="Стрелка" class="arrow-icon">
+                        </div>
+                    </div>           
+                </div>
+                <div class="safe-product-card crem">
+                    <img class="safe-img-cosmetics" src="images/mixit.png" alt="Изображение косметики">
+                    <a href="#" class="like"><img class="img-like" src="images/like.svg" alt="Иконка лайка"></a>
+                    <div class="safe-product-details">
+                        <h4 class="safe-product-name">Крем для тела</h4>
+                        <p class="safe-product-description">MIXIT Spa Rituals Coconut</p>
+                        <div class="safe-about">
+                            <p>Подробнее</p>
+                            <img src="images/white-right-arrow.svg" alt="Стрелка" class="arrow-icon">
+                        </div>
+                    </div>           
+                </div>
+                <div class="safe-product-card crem">
+                    <img class="safe-img-cosmetics" src="images/frudia.png" alt="Изображение косметики">
+                    <a href="#" class="like"><img class="img-like" src="images/like.svg" alt="Иконка лайка"></a>
+                    <div class="safe-product-details">
+                        <h4 class="safe-product-name">Крем SPF 50+</h4>
+                        <p class="safe-product-description">Frudia Avocado Greenery Relief Sun</p>
+                        <div class="safe-about">
+                            <p>Подробнее</p>
+                            <img src="images/white-right-arrow.svg" alt="Стрелка" class="arrow-icon">
+                        </div>
+                    </div>           
+                </div>
+                <div class="safe-product-card crem">
+                    <img class="safe-img-cosmetics" src="images/proffi.png" alt="Изображение косметики">
+                    <a href="#" class="like"><img class="img-like" src="images/like.svg" alt="Иконка лайка"></a>
+                    <div class="safe-product-details">
+                        <h4 class="safe-product-name">Крем для глаз</h4>
+                        <p class="safe-product-description">DoctorProffi Cucumber eye</p>
+                        <div class="safe-about">
+                            <p>Подробнее</p>
+                            <img src="images/white-right-arrow.svg" alt="Стрелка" class="arrow-icon">
+                        </div>
+                    </div>           
+                </div>
+                <div class="safe-product-card shampo human">
+                    <img class="safe-img-cosmetics" src="images/human.png" alt="Изображение косметики">
+                    <a href="#" class="like"><img class="img-like" src="images/like.svg" alt="Иконка лайка"></a>
+                    <div class="safe-product-details">
+                        <h4 class="safe-product-name">Шампунь для волос</h4>
+                        <p class="safe-product-description">HUMAN BEAUTY EVOLUTION DAILY USE</p>
+                        <div class="safe-about">
+                            <p>Подробнее</p>
+                            <img src="images/white-right-arrow.svg" alt="Стрелка" class="arrow-icon">
+                        </div>
+                    </div>           
+                </div>
+                <div class="safe-product-card shampo">
+                    <img class="safe-img-cosmetics" src="images/lador.png" alt="Изображение косметики">
+                    <a href="#" class="like"><img class="img-like" src="images/like.svg" alt="Иконка лайка"></a>
+                    <div class="safe-product-details">
+                        <h4 class="safe-product-name">Увлажняющий шампунь</h4>
+                        <p class="safe-product-description">Lador Moisture Balancing Shampoo</p>
+                        <div class="safe-about">
+                            <p>Подробнее</p>
+                            <img src="images/white-right-arrow.svg" alt="Стрелка" class="arrow-icon">
+                        </div>
+                    </div>           
+                </div>
+                <div class="safe-product-card shampo">
+                    <img class="safe-img-cosmetics" src="images/epica.png" alt="Изображение косметики">
+                    <a href="#" class="like"><img class="img-like" src="images/like.svg" alt="Иконка лайка"></a>
+                    <div class="safe-product-details">
+                        <h4 class="safe-product-name">Шампунь для роста волос</h4>
+                        <p class="safe-product-description">EPICA Professional Shampoo for hair growth</p>
+                        <div class="safe-about">
+                            <p>Подробнее</p>
+                            <img src="images/white-right-arrow.svg" alt="Стрелка" class="arrow-icon">
+                        </div>
+                    </div>           
+                </div>
+                <div class="safe-product-card shampo">
+                    <img class="safe-img-cosmetics" src="images/cemani.png" alt="Изображение косметики">
+                    <a href="#" class="like"><img class="img-like" src="images/like.svg" alt="Иконка лайка"></a>
+                    <div class="safe-product-details">
+                        <h4 class="safe-product-name">Шампунь для нейтрализации желтизны</h4>
+                        <p class="safe-product-description">Selective Professional Gray</p>
+                        <div class="safe-about">
+                            <p>Подробнее</p>
+                            <img src="images/white-right-arrow.svg" alt="Стрелка" class="arrow-icon">
+                        </div>
+                    </div>           
+                </div>
+                <div class="safe-product-card shampo">
+                    <img class="safe-img-cosmetics" src="images/salone.png" alt="Изображение косметики">
+                    <a href="#" class="like"><img class="img-like" src="images/like.svg" alt="Иконка лайка"></a>
+                    <div class="safe-product-details">
+                        <h4 class="safe-product-name">Шампунь для удаления желтизны</h4>
+                        <p class="safe-product-description">Il Salone Milano Yellow Remover</p>
+                        <div class="safe-about">
+                            <p>Подробнее</p>
+                            <img src="images/white-right-arrow.svg" alt="Стрелка" class="arrow-icon">
+                        </div>
+                    </div>           
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <section id="feedback" class="feedback desactive-page">
+        <header class="feedback-header">
+            <a href="#"><img src="images/arrow-left.svg" alt="Иконка стрелки" class="arrow-icon arrow-icon-left"></a>
+            <div class="feedback-header-title">Отзывы</div>
+        </header>
+        <main class="feedback-content">
+            <div class="feedback-opiton">
+                <div class="feedback-filter">
+                    <img src="images/filter-feedback.svg" class="feedback-icon">
+                    Новые
+                </div>
+                <a href="#">Оставить отзыв</a>
+            </div>
+            <div class="feedback-list">
+                <div class="feedback-card" data-date="2025-05-12T12:48" data-rating="5">
+                    <div class="feedback-profile">
+                        <img src="images/anna.png" class="profile-image">
+                        <div class="feedback-profile-text">
+                            <p class="feedback-name">Анна</p>
+                            <p class="feedback-date">Сегодня, 12:48</p>
+                        </div>
+                        <div class="feedback-rate">
+                            <img class="feedback-star full" src="images/fullstar.svg">
+                            <img class="feedback-star full" src="images/fullstar.svg">
+                            <img class="feedback-star full" src="images/fullstar.svg">
+                            <img class="feedback-star full" src="images/fullstar.svg">
+                            <img class="feedback-star full" src="images/fullstar.svg">
+                        </div>
+                    </div>
+                    <div class="feedback-description">
+                        <p class="feedback-text">Достоинства: Прекрасно очищает волосы и делает их мягкими!</p>
+                        <p class="feedback-text">Недостатки: Нет.</p>
+                    </div>
+                </div>
+                <div class="feedback-card" data-date="2025-05-11T19:32" data-rating="5">
+                    <div class="feedback-profile">
+                        <img src="images/olga.jpg" class="profile-image">
+                        <div class="feedback-profile-text">
+                            <p class="feedback-name">Ольга</p>
+                            <p class="feedback-date">Вчера, 19:32</p>
+                        </div>
+                        <div class="feedback-rate">
+                            <img class="feedback-star full" src="images/fullstar.svg">
+                            <img class="feedback-star full" src="images/fullstar.svg">
+                            <img class="feedback-star full" src="images/fullstar.svg">
+                            <img class="feedback-star full" src="images/fullstar.svg">
+                            <img class="feedback-star full" src="images/fullstar.svg">
+                        </div>
+                    </div>
+                    <div class="feedback-description">
+                        <p class="feedback-text">Достоинства: Объем и блеск невероятные! Не сушит волосы. Рекомендую!</p>
+                        <p class="feedback-text">Недостатки: Нет.</p>
+                    </div>
+                </div>
+                <div class="feedback-card" data-date="2025-05-11T15:23" data-rating="1">
+                    <div class="feedback-profile">
+                        <img src="images/kirill.jpg" class="profile-image">
+                        <div class="feedback-profile-text">
+                            <p class="feedback-name">Кирилл</p>
+                            <p class="feedback-date">Вчера, 15:23</p>
+                        </div>
+                        <div class="feedback-rate">
+                            <img class="feedback-star full" src="images/fullstar.svg">
+                            <img class="feedback-star empty" src="images/emptystar.svg">
+                            <img class="feedback-star empty" src="images/emptystar.svg">
+                            <img class="feedback-star empty" src="images/emptystar.svg">
+                            <img class="feedback-star empty" src="images/emptystar.svg">
+                        </div>
+                    </div>
+                    <div class="feedback-description">
+                        <p class="feedback-text">Достоинства: Нет.</p>
+                        <p class="feedback-text">Недостатки: Не подошел! Волосы после него слишком сухие. Разочарован!</p>
+                    </div>
+                </div>
+                <div class="feedback-card" data-date="2025-05-11T08:02" data-rating="5">
+                    <div class="feedback-profile">
+                        <img src="images/masha.jpg" class="profile-image">
+                        <div class="feedback-profile-text">
+                            <p class="feedback-name">Мария</p>
+                            <p class="feedback-date">Вчера, 08:02</p>
+                        </div>
+                        <div class="feedback-rate">
+                            <img class="feedback-star full" src="images/fullstar.svg">
+                            <img class="feedback-star full" src="images/fullstar.svg">
+                            <img class="feedback-star full" src="images/fullstar.svg">
+                            <img class="feedback-star full" src="images/fullstar.svg">
+                            <img class="feedback-star full" src="images/fullstar.svg">
+                        </div>
+                    </div>
+                    <div class="feedback-description">
+                        <p class="feedback-text">Достоинства: Приятный аромат и легкость укладки! Очень довольна!</p>
+                        <p class="feedback-text">Недостатки: Нет.</p>
+                    </div>
+                </div>
+                <div class="feedback-card" data-date="2025-04-15T14:35" data-rating="4">
+                    <div class="feedback-profile">
+                        <img src="images/elena.jpg" class="profile-image">
+                        <div class="feedback-profile-text">
+                            <p class="feedback-name">Елена</p>
+                            <p class="feedback-date">15 марта, 14:35</p>
+                        </div>
+                        <div class="feedback-rate">
+                            <img class="feedback-star full" src="images/fullstar.svg">
+                            <img class="feedback-star full" src="images/fullstar.svg">
+                            <img class="feedback-star full" src="images/fullstar.svg">
+                            <img class="feedback-star full" src="images/fullstar.svg">
+                            <img class="feedback-star empty" src="images/emptystar.svg">
+                        </div>
+                    </div>
+                    <div class="feedback-description">
+                        <p class="feedback-text">Достоинства: Увлажняет. В целом - классный!</p>
+                        <p class="feedback-text">Недостатки: Не справляется с жирностью.</p>
+                    </div>
+                </div>
+                <div class="feedback-card" data-date="2025-04-01T09:12" data-rating="5">
+                    <div class="feedback-profile">
+                        <img src="images/julia.jpg" class="profile-image">
+                        <div class="feedback-profile-text">
+                            <p class="feedback-name">Юлия</p>
+                            <p class="feedback-date">1 марта, 09:12</p>
+                        </div>
+                        <div class="feedback-rate">
+                            <img class="feedback-star full" src="images/fullstar.svg">
+                            <img class="feedback-star full" src="images/fullstar.svg">
+                            <img class="feedback-star full" src="images/fullstar.svg">
+                            <img class="feedback-star full" src="images/fullstar.svg">
+                            <img class="feedback-star full" src="images/fullstar.svg">
+                        </div>
+                    </div>
+                    <div class="feedback-description">
+                        <p class="feedback-text">Достоинства: Сразу заметила разницу! Волосы блестят как никогда!</p>
+                        <p class="feedback-text">Недостатки: Нет.</p>
+                    </div>
+                </div>
+                <div class="feedback-card" data-date="2025-02-24T18:52" data-rating="3">
+                    <div class="feedback-profile">
+                        <img src="images/pasha.jpg" class="profile-image">
+                        <div class="feedback-profile-text">
+                            <p class="feedback-name">Павел</p>
+                            <p class="feedback-date">24 февраля, 18:52</p>
+                        </div>
+                        <div class="feedback-rate">
+                            <img class="feedback-star full" src="images/fullstar.svg">
+                            <img class="feedback-star full" src="images/fullstar.svg">
+                            <img class="feedback-star full" src="images/fullstar.svg">
+                            <img class="feedback-star empty" src="images/emptystar.svg">
+                            <img class="feedback-star empty" src="images/emptystar.svg">
+                        </div>
+                    </div>
+                    <div class="feedback-description">
+                        <p class="feedback-text">Достоинства: Нормальный шампунь, но ожидал большего.</p>
+                        <p class="feedback-text">Недостатки: Не хватило эффективности.</p>
+                    </div>
+                </div>
+                <div class="feedback-card" data-date="2025-02-22T19:04" data-rating="5">
+                    <div class="feedback-profile">
+                        <img src="images/ivan.jpg" class="profile-image">
+                        <div class="feedback-profile-text">
+                            <p class="feedback-name">Иван</p>
+                            <p class="feedback-date">22 февраля, 19:04</p>
+                        </div>
+                        <div class="feedback-rate">
+                            <img class="feedback-star full" src="images/fullstar.svg">
+                            <img class="feedback-star full" src="images/fullstar.svg">
+                            <img class="feedback-star full" src="images/fullstar.svg">
+                            <img class="feedback-star full" src="images/fullstar.svg">
+                            <img class="feedback-star full" src="images/fullstar.svg">
+                        </div>
+                    </div>
+                    <div class="feedback-description">
+                        <p class="feedback-text">Достоинства: Отлично очищает волосы! Стало легче расчесывать. Рекомендую!</p>
+                        <p class="feedback-text">Недостатки: Нет.</p>
+                    </div>
+                </div>
+                <div class="feedback-card" data-date="2025-02-19T13:26" data-rating="4">
+                    <div class="feedback-profile">
+                        <img src="images/vika.jpg" class="profile-image">
+                        <div class="feedback-profile-text">
+                            <p class="feedback-name">Виктория</p>
+                            <p class="feedback-date">19 февраля, 13:26</p>
+                        </div>
+                        <div class="feedback-rate">
+                            <img class="feedback-star full" src="images/fullstar.svg">
+                            <img class="feedback-star full" src="images/fullstar.svg">
+                            <img class="feedback-star full" src="images/fullstar.svg">
+                            <img class="feedback-star full" src="images/fullstar.svg">
+                            <img class="feedback-star empty" src="images/emptystar.svg">
+                        </div>
+                    </div>
+                    <div class="feedback-description">
+                        <p class="feedback-text">Достоинства: Хороший состав!</p>
+                        <p class="feedback-text">Недостатки: Больше подходит на короткие волосы.</p>
+                    </div>
+                </div>
+                <div class="feedback-card" data-date="2025-02-14T15:56" data-rating="5">
+                    <div class="feedback-profile">
+                        <img src="images/dima.jpg" class="profile-image">
+                        <div class="feedback-profile-text">
+                            <p class="feedback-name">Дмитрий</p>
+                            <p class="feedback-date">14 февраля, 15:56</p>
+                        </div>
+                        <div class="feedback-rate">
+                            <img class="feedback-star full" src="images/fullstar.svg">
+                            <img class="feedback-star full" src="images/fullstar.svg">
+                            <img class="feedback-star full" src="images/fullstar.svg">
+                            <img class="feedback-star full" src="images/fullstar.svg">
+                            <img class="feedback-star full" src="images/fullstar.svg">
+                        </div>
+                    </div>
+                    <div class="feedback-description">
+                        <p class="feedback-text">Достоинства: Приятно пахнет и придает объем! Я доволен покупкой!</p>
+                        <p class="feedback-text">Недостатки: Нет.</p>
+                    </div>
+                </div>
+                <div class="feedback-card" data-date="2025-02-08T11:33" data-rating="5">
+                    <div class="feedback-profile">
+                        <img src="images/tanya.jpg" class="profile-image">
+                        <div class="feedback-profile-text">
+                            <p class="feedback-name">Татьяна</p>
+                            <p class="feedback-date">8 февраля, 11:33</p>
+                        </div>
+                        <div class="feedback-rate">
+                            <img class="feedback-star full" src="images/fullstar.svg">
+                            <img class="feedback-star full" src="images/fullstar.svg">
+                            <img class="feedback-star full" src="images/fullstar.svg">
+                            <img class="feedback-star full" src="images/fullstar.svg">
+                            <img class="feedback-star full" src="images/fullstar.svg">
+                        </div>
+                    </div>
+                    <div class="feedback-description">
+                        <p class="feedback-text">Достоинства: Напоминает spa-процедуры! Невероятно нравится!</p>
+                        <p class="feedback-text">Недостатки: Нет.</p>
+                    </div>
+                </div>
+                <div class="feedback-card" data-date="2025-02-03T06:57" data-rating="4">
+                    <div class="feedback-profile">
+                        <img src="images/sasha.jpg" class="profile-image">
+                        <div class="feedback-profile-text">
+                            <p class="feedback-name">Александр</p>
+                            <p class="feedback-date">3 февраля, 06:57</p>
+                        </div>
+                        <div class="feedback-rate">
+                            <img class="feedback-star full" src="images/fullstar.svg">
+                            <img class="feedback-star full" src="images/fullstar.svg">
+                            <img class="feedback-star full" src="images/fullstar.svg">
+                            <img class="feedback-star full" src="images/fullstar.svg">
+                            <img class="feedback-star empty" src="images/emptystar.svg">
+                        </div>
+                    </div>
+                    <div class="feedback-description">
+                        <p class="feedback-text">Достоинства: В целом неплохой.</p>
+                        <p class="feedback-text">Недостатки: Иногда вызывает зуд. Не всегда идеально!</p>
+                    </div>
+                </div>
+                <div class="feedback-card" data-date="2025-01-25T21:44" data-rating="5">
+                    <div class="feedback-profile">
+                        <img src="images/sergey.jpg" class="profile-image">
+                        <div class="feedback-profile-text">
+                            <p class="feedback-name">Сергей</p>
+                            <p class="feedback-date">25 января, 21:44</p>
+                        </div>
+                        <div class="feedback-rate">
+                            <img class="feedback-star full" src="images/fullstar.svg">
+                            <img class="feedback-star full" src="images/fullstar.svg">
+                            <img class="feedback-star full" src="images/fullstar.svg">
+                            <img class="feedback-star full" src="images/fullstar.svg">
+                            <img class="feedback-star full" src="images/fullstar.svg">
+                        </div>
+                    </div>
+                    <div class="feedback-description">
+                        <p class="feedback-text">Достоинства: Обожаю его! Волосы выглядят здоровыми и свежими после каждой мойки!</p>
+                        <p class="feedback-text">Недостатки: Нет.</p>
+                    </div>
+                </div>
+                <div class="feedback-card" data-date="2025-01-16T10:13" data-rating="4">
+                    <div class="feedback-profile">
+                        <img src="images/sveta.jpg" class="profile-image">
+                        <div class="feedback-profile-text">
+                            <p class="feedback-name">Светлана</p>
+                            <p class="feedback-date">16 января, 10:13</p>
+                        </div>
+                        <div class="feedback-rate">
+                            <img class="feedback-star full" src="images/fullstar.svg">
+                            <img class="feedback-star full" src="images/fullstar.svg">
+                            <img class="feedback-star full" src="images/fullstar.svg">
+                            <img class="feedback-star full" src="images/fullstar.svg">
+                            <img class="feedback-star empty" src="images/emptystar.svg">
+                        </div>
+                    </div>
+                    <div class="feedback-description">
+                        <p class="feedback-text">Достоинства: Хороший шампунь. Общее качество отличное!</p>
+                        <p class="feedback-text">Недостатки: Немного путает волосы.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <div id="modal-filter-feedback" class="modal-filter-feedback modal-desactive">
+        <section id="feedback-search-filter" class="feedback-search-filter desactive-page">
+            <div class="filter-close">
+                <img src="images/close-icon.svg" alt="Закрыть" class="close-icon">
+            </div>
+            <div class="filter-container">
+                <div class="filter-group">
+                    <h3>Показать сначала</h3>
+                    <label><input type="radio" name="products"> Новые</label>
+                    <label><input type="radio" name="products"> Старые</label>
+                    <label><input type="radio" name="products"> С высокой оценкой</label>
+                    <label><input type="radio" name="products"> С низкой оценкой</label>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section id="analize" class="analize desactive-page">
+        <header class="analize-header">
+            <a href="#"><img src="images/arrow-left.svg" alt="Иконка стрелки" class="arrow-icon arrow-icon-left"></a>
+            <div class="analize-header-title">Анализ состава</div>
+        </header>
+        <main class="analize-content">
+            <div class="analize-button analize-button-photo">
+                <p class="analize-text-button">Загрузить фото состава</p>
+                <img class="analize-button-image" src="images/white-photo.svg">
+            </div>
+            <p class="analize-text">Загрузить фото состава косметического средства из галереи или сделать новое фото через камеру</p>
+            <div class="analize-button analize-button-text">
+                <p class="analize-text-button">Ввести состав текстом</p>
+                <img class="analize-button-image" src="images/textwhite.svg">
+            </div>
+            <p class="analize-text">Ввести состав косметического средства вручную</p>
+        </main>
+    </section>
+
+    <section id="analize-pagephoto" class="analize-pagephoto desactive-page">
+        <header class="analize-pagephoto-header">
+            <a href="#"><img src="images/arrow-left.svg" alt="Иконка стрелки" class="arrow-icon arrow-icon-left"></a>
+            <div class="analize-pagephoto-header-title">Анализ состава</div>
+        </header>
+        <main class="analize-pagephoto-content">
+            <div>
+                <h3 class="analize-pagephoto-title">Для качественного анализа<br> с помощью фото необходимо:</h3>
+                <ul class="analize-pagephoto-list">
+                    <li class="analize-pagephoto-item">Выбрать хорошо освещенное место;</li>
+                    <li class="analize-pagephoto-item">Убедиться, что этикетка хорошо видна и находится в фокусе;</li>
+                    <li class="analize-pagephoto-item">На фото отсутствуют блики и отражения;</li>
+                    <li class="analize-pagephoto-item">Фон нейтральный.</li>
+                </ul>
+            </div>
+            <div class="analize-pagephoto-choise">
+                <div class="analize-pagephoto-button analize-pagephoto-button-galery">
+                    <p class="analize-pagephoto-text-button">Из галереи</p>
+                    <img class="analize-pagephoto-button-image" src="images/galleryblack.svg">
+                </div>
+                <div class="analize-pagephoto-button analize-pagephoto-button-camera">
+                    <p class="analize-pagephoto-text-button">Открыть камеру</p>
+                    <img class="analize-pagephoto-button-image" src="images/photoblack.svg">
+                </div>
+            </div>
+            <button class="analize-sostav-photo">Анализ состава</button>
+        </main>
+    </section>
+
+    <section id="analize-pagetext" class="analize-pagetext desactive-page">
+        <header class="analize-pagetext-header">
+            <a href="#"><img src="images/arrow-left.svg" alt="Иконка стрелки" class="arrow-icon arrow-icon-left"></a>
+            <div class="analize-pagephoto-header-title">Анализ состава</div>
+        </header>
+        <main class="analize-pagetext-content">
+            <form class="analize-pagetext-form" action="#" method="post">
+                <div class="analize-pagetext-input-wrapper big-input">
+                    <textarea name="question" placeholder="Состав косметического средства" class="analize-pagetext-search-input analize-pagetext-textarea-input"></textarea>
+                </div>
+            </form>
+            <div>
+                <h3 class="analize-pagephoto-title">Для качественного анализа<br> с помощью текста необходимо:</h3>
+                <ul class="analize-pagephoto-list">
+                    <li class="analize-pagephoto-item">Ввести все компоненты без лишних пробелов, отделяя их запятыми;</li>
+                    <li class="analize-pagephoto-item">Избегать сокращений;</li>
+                    <li class="analize-pagephoto-item">Не пропустить ни одного компонента;</li>
+                    <li class="analize-pagephoto-item">Проверить введенный текст на наличие ошибок.</li>
+                </ul>
+            </div>
+            <button class="analize-sostav-text">Анализ состава</button>
+        </main>
+    </section>
+
+    <section id="comparison" class="comparison desactive-page">
+        <header class="comparison-header">
+            <a href="#"><img src="images/arrow-left.svg" alt="Иконка стрелки" class="arrow-icon arrow-icon-left"></a>
+            <div class="comparison-header-title">Сравнение составов</div>
+        </header>
+        <main class="comparison-content">
+            <p class="comparison-text">Загрузите фото состава косметического<br> средства или вставьте его текстом.</p>
+            <div class="first-sostav">
+                <h3 class="first-sostav-title">1 косметическое средство</h3>
+                <div class="first-sostav-choise">
+                    <div class="desactive-button first-sostav-button first-sostav-button-photo">
+                        <p class="first-sostav-text-button">Фото состава</p>
+                        <img class="first-sostav-button-image" src="images/photoblack.svg">
+                    </div>
+                    <div class="desactive-button first-sostav-button first-sostav-button-text">
+                        <p class="first-sostav-text-button">Текст состава</p>
+                        <img class="first-sostav-button-image" src="images/textblack.svg">
+                    </div>
+                </div>
+            </div>
+            <div class="second-sostav">
+                <h3 class="second-sostav-title">2 косметическое средство</h3>
+                <div class="second-sostav-choise">
+                    <div class="desactive-button second-sostav-button second-sostav-button-photo">
+                        <p class="second-sostav-text-button">Фото состава</p>
+                        <img class="second-sostav-button-image" src="images/photoblack.svg">
+                    </div>
+                    <div class="desactive-button second-sostav-button second-sostav-button-text">
+                        <p class="second-sostav-text-button">Текст состава</p>
+                        <img class="second-sostav-button-image" src="images/textblack.svg">
+                    </div>
+                </div>
+            </div>
+            <button class="comparison-sostav-button">Сравнить составы</button>
+        </main>
+    </section>
+
+    <section id="comparison-result" class="comparison-result desactive-page">
+        <header class="comparison-result-header">
+            <a href="#"><img src="images/arrow-left.svg" alt="Иконка стрелки" class="arrow-icon arrow-icon-left"></a>
+            <div class="comparison-result-header-title">Результат сравнения составов</div>
+        </header>
+        <main class="comparison-result-content">
+            <h3 class="comparison-result-subtitle">Вывод</h3>
+            <p class="comparison-result-text">Наиболее подходящее<br> для вас 2 косметическое средство. Оно безопаснее 1 косметического средства<br> на 4%.</p>
+            <div class="first-comparison-result">
+                <h3 class="comparison-result-subtitle">1 косметическое средство</h3>
+                <div class="first-comparison-sostav">
+                    <p>Aqua , Sodium Laureth Sulfate, Coco-Betaine, Glycol Distearate, Sodium Chloride, Dimethicone, Sodium Benzoate, Salicylic Acid, Guar Hydroxypropyltrimonium Chloride, Carbomer, Cetyl Alcohol, Sodium Cocoyl Amino Acids, Behentrimonium Methosulfate, Quaternium-33, Citrus Nobilis (Mandarin Orange) Fruit Extract, Prunus Amygdalus Dulcis (Sweet Almond) Extract, PEG-7 Glyceryl Cocoate, Benzyl Benzoate, Sodium Sarcosinate, Propylene Glycol, Benzyl Alcohol, Arginine, Hydrolyzed Soy Protein, Lactic Acid, Hydrolyzed Vegetable Protein Pg-Propyl Silanetriol, Parfum, Phenoxyethanol, Citric Acid</p>
+                </div>
+                <div class="detail-analize">
+                    <h3>Подробный анализ</h3>
+                    <a href="#" class="arrow-icon-profile"><img src="images/arrow-right.svg" alt="Иконка стрелки" class="arrow-icon"></a>
+                </div>
+            </div>
+            <div class="second-comparison-result">
+                <h3 class="comparison-result-subtitle">2 косметическое средство</h3>
+                <div class="second-comparison-sostav">
+                    <p>Aqua, Coco Glucosid, Cocamidopropyl Betaine, Hydrolyzed keratin, NMF(Natural moisturizing factor), Sweet Almond Oil, CHICKEN EGG YOLK, TURMERIC EXTRACT, Macadamia Integrifolia Seed Oil, Cocamide DEA Sodium Cocoamphoacetate, Sodium Chloride , Fragrance, Sharomix CP 10, Citric Acid, EDTA</p>
+                </div>
+                <div class="detail-analize">
+                    <h3>Подробный анализ</h3>
+                    <a href="#" class="arrow-icon-profile"><img src="images/arrow-right.svg" alt="Иконка стрелки" class="arrow-icon"></a>
+                </div>
+            </div>
+            <button class="comparison-result-button">На главную</button>
+        </main>
+    </section>
+
+    <section id="component" class="component desactive-page">
+        <header class="component-header">
+            <a href="#"><img src="images/arrow-left.svg" alt="Иконка стрелки" class="arrow-icon arrow-icon-left"></a>
+            <div class="component-header-title">Компонент</div>
+        </header>
+        <main class="component-content">
+            <h3 class="component-subtitle">Arginine</h3>
+            <p class="component-text">Аминокислота, которая широко используется в косметических средствах и продуктах по уходу за кожей благодаря своим полезным свойствам.</p>
+            <h3 class="component-subtitle">Рекомендации по использованию</h3>
+            <h4 class="component-mini-subtitle">Подходит тем, кто нуждается в следующем:</h4>
+            <div class="advice-section">
+                <ul class="advice-list">
+                    <li>Маскировка</li>
+                    <li>Кондиционирование кожи</li>
+                    <li>Антистатические свойства</li>
+                </ul>
+            </div>
+            <h3 class="component-subtitle">Безопасность</h3>
+            <p class="component-mini-text">Безопасность состоит из аллергичности, токсичности и экологичности компонентов. В случае, когда безопасность составляет меньше 60%, то косметическое средство не является безопасным.</p>
+            <p class="component-text">Считается безопасным для использования в косметике. Он нетоксичен и некомедогенен, то есть не закупоривает поры. Аргинин может быть получен как из растительных, так и из животных источников, что делает его подходящим для веганов. </p>
+        </main>
+    </section>
+
+    <section id="analize-result" class="analize-result desactive-page">
+        <header class="analize-result-header">
+            <a href="#"><img src="images/arrow-left.svg" alt="Иконка стрелки" class="arrow-icon arrow-icon-left"></a>
+            <div class="analize-result-header-title">Результат анализа</div>
+        </header>
+        <main class="analize-result-content">
+            <div class="analize-result-cosmetic">
+                <div class="analize-result-cosmetic-header">
+                    <h4 class="analize-result-cosmetic-subtitle">Шампунь для волос</h3>
+                    <img class="like" src="images/like.svg">
+                </div>
+                <h3>HUMAN BEAUTY EVOLUTION<br> DAILY USE</h3>
+                <div class="analize-result-cosmetic-card">
+                    <img class="analize-result-cosmetic-card-image" src="images/human.png">
+                    <div class="analize-result-cosmetic-card-description">
+                        <p class="analize-result-safety">Безопасность: 62%</p>
+                        <div class="application">
+                            <h5>Область применения:</h5>
+                            <p>Волосы</p>
+                        </div>
+                        <div class="hair">
+                            <h5>Тип волос:</h5>
+                            <p>Для всех типов волос</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="analize-result-text">Безопасность состоит из аллергичности, токсичности и экологичности компонентов. В случае, когда безопасность составляет меньше 60%, то косметическое средство не является безопасным.</p>
+            <div class="analize-result-sostav">
+                <h3>Состав</h3>
+                <div class="analize-sostav">
+                    <p>Aqua, Sodium Laureth Sulfate, Sodium Chloride, Coco Glucoside, Cocamidopropyl Betaine, Cocamide DEA, Polyquaternium-7, Sodium Lactate, Glycerin, Ethylenediaminetetraacetic acid, Hydroxypropyltrimonium hydrolyzed vegetable protein, Guar hydroxypropyltrimonium chloride, Olea Europaea (Olive) extract, Fragrance, Methylchloroisothiazolinone.</p>
+                </div>
+            </div>
+            <div class="analize-result-origin-comp">
+                <h3>Происхождение компонентов</h3>
+                <div class="analize-result-origin">
+                    <div class="analize-result-graph">
+                        <img class="analize-result-graph-image" src="images/graph1.svg">
+                        <p class="first-percent">67%</p>
+                        <p class="second-percent">33%</p>
+                    </div>
+                    <ul class="analize-result-origin-list">
+                        <li>Природное</li>
+                        <li>Химическое</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="analize-result-aboutcomponent">
+                <h3>О компонентах (INCI)</h3>
+                <div class="analize-result-component">
+                    <h4>Arginine — действующее вещество</h4>
+                    <p>Разглаживает волос, хорошо влияет на корни волос</p>
+                    <div class="component-section">
+                        <ul class="component-list">
+                            <li>Аминокислота</li>
+                            <li>Заживляет</li>
+                            <li>Очищает кожу</li>
+                            <li>Укрепляет сосуды</li>
+                        </ul>
+                    </div>
+                    <p class="itog">Безопасно</p>
+                </div>
+                <div class="see-all-comp">
+                    <p>Показать все компоненты</p>
+                    <img src="images/arrow-bot.svg" alt="Стрелка вниз">
+                </div>
+            </div>
+            <div class="analize-result-recomendation">
+                <h3>Рекомендации по использованию</h3>
+                <p>Подходит тем, кто нуждается в следующем:</p>
+                <div class="recomendation-section">
+                    <ul class="recomendation-list">
+                        <li>Очищение</li>
+                        <li>Увлажнение кожи</li>
+                        <li>Антисептическое действие</li>
+                        <li>Смягчение кожи</li>
+                        <li>Успокоение кожи</li>
+                        <li>Улучшение структуры волос</li>
+                        <li>Лечение повреждений</li>
+                        <li>Кондиционирование волос</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="analize-result-feedback">
+                <h3>Отзывы</h3>
+                <a href="#" class="arrow-icon-profile"><img src="images/arrow-right.svg" alt="Иконка стрелки" class="arrow-icon"></a>
+            </div>
+            <div class="analize-result-analog">
+                <h3>Аналогичные продукты</h3>
+                <div class="analize-result-list">
+                    <div class="analize-result-card">
+                        <img class="analize-result-img-cosmetics" src="images/lador.png" alt="Изображение косметики">
+                        <a href="#" class="like"><img class="img-like" src="images/like.svg" alt="Иконка лайка"></a>
+                        <div class="analize-result-details">
+                            <h4 class="analize-result-name">Увлажняющий шампунь</h4>
+                            <p class="analize-result-description">Lador Moisture Balancing Shampoo</p>
+                            <div class="analize-result-about">
+                                <p>Подробнее</p>
+                                <img src="images/white-right-arrow.svg" alt="Стрелка" class="arrow-icon">
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="analize-result-card">
+                        <img class="analize-result-img-cosmetics" src="images/epica.png" alt="Изображение косметики">
+                        <a href="#" class="like"><img class="img-like" src="images/like.svg" alt="Иконка лайка"></a>
+                        <div class="analize-result-details">
+                            <h4 class="analize-result-name">Шампунь для роста волос</h4>
+                            <p class="analize-result-description">EPICA Professional Shampoo for hair growth</p>
+                            <div class="analize-result-about">
+                                <p>Подробнее</p>
+                                <img src="images/white-right-arrow.svg" alt="Стрелка" class="arrow-icon">
+                            </div>
+                        </div>           
+                    </div>
+                    <div class="analize-result-card">
+                        <img class="analize-result-img-cosmetics" src="images/cemani.png" alt="Изображение косметики">
+                        <a href="#" class="like"><img class="img-like" src="images/like.svg" alt="Иконка лайка"></a>
+                        <div class="analize-result-details">
+                            <h4 class="analize-result-name">Шампунь для нейтрализации желтизны</h4>
+                            <p class="analize-result-description">Selective Professional Gray</p>
+                            <div class="analize-result-about">
+                                <p>Подробнее</p>
+                                <img src="images/white-right-arrow.svg" alt="Стрелка" class="arrow-icon">
+                            </div>
+                        </div>           
+                    </div>
+                    <div class="analize-result-card">
+                        <img class="analize-result-img-cosmetics" src="images/salone.png" alt="Изображение косметики">
+                        <a href="#" class="like"><img class="img-like" src="images/like.svg" alt="Иконка лайка"></a>
+                        <div class="analize-result-details">
+                            <h4 class="analize-result-name">Шампунь для удаления желтизны</h4>
+                            <p class="analize-result-description">Il Salone Milano Yellow Remover</p>
+                            <div class="analize-result-about">
+                                <p>Подробнее</p>
+                                <img src="images/white-right-arrow.svg" alt="Стрелка" class="arrow-icon">
+                            </div>
+                        </div>           
+                    </div>
+                </div>
+            </div>
+            <button class="analize-result-exp-but">Консультация у эксперта</button>
+            <button class="analize-result-home-but">На главную</button>
+        </main>
+    </section>
+
+    <section id="analize-result1" class="analize-result1 desactive-page">
+        <header class="analize-result1-header">
+            <a href="#"><img src="images/arrow-left.svg" alt="Иконка стрелки" class="arrow-icon arrow-icon-left"></a>
+            <div class="analize-result1-header-title">Результат анализа</div>
+        </header>
+        <main class="analize-result1-content">
+            <div class="analize-result-cosmetic">
+                <div class="analize-result-cosmetic-header">
+                    <h4 class="analize-result-cosmetic-subtitle">Крем SPF 30 с тоном</h3>
+                    <img class="like" src="images/like.svg">
+                </div>
+                <h3>Holy Land SUNBRELLA DEMI<br> MAKE-UP</h3>
+                <div class="analize-result-cosmetic-card">
+                    <img class="analize-result-cosmetic-card-image" src="images/holyland.png">
+                    <div class="analize-result-cosmetic-card-description">
+                        <p class="analize-result-safety1">Опасно на 42%</p>
+                        <div class="application">
+                            <h5>Область применения:</h5>
+                            <p>Тело</p>
+                        </div>
+                        <div class="hair">
+                            <h5>Тип кожи:</h5>
+                            <p>Для всех типов кожи</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="analize-result-text">Безопасность состоит из аллергичности, токсичности и экологичности компонентов. В случае, когда безопасность составляет меньше 60%, то косметическое средство не является безопасным.</p>
+            <div class="analize-result-sostav">
+                <h3>Состав</h3>
+                <div class="analize-sostav">
+                    <p>WATER (AQUA), ETHYLHEXYL METHOXYCINNAMATE, BIS-ETHYLHEXYLOXYPHENOL METHOXYPHENYL TRIAZINE,POTASSIUM CETYL PHOSPHATE,DIETHYLAMINO HYDROXYBENZOYL HEXYL BENZOATE, BENZOPHENONE-3, TITANIUM DIOXIDE, PROPYLENE GLYCOL ,CETYL ALCOHOL, MINERAL OIL,ISOPROPYLMYRISTATE ,C12-15 ALKYL BENZOATE, ZINC OXIDE,MAGNESIUM ASCORBYL PHOSPHATE, TOCOPHERYLACETATE, GINKGO BILOBA LEAF EXTRACT, CAMELLIA SINENSIS (GREEN TEA) LEAF EXTRACT , GLYCERIN, DIMETHICONE, PALMITIC ACID, STEARIC ACID ,CETYL PALMITATE ,CARBOMER, PANTHENOL, IRON OXIDES (CI77491/77492/77499), TALC ,BUTYLENE GLYCOL, TRIETHANOLAMINE, ETHYLHEXYLGLYCERIN, PHENOXYETHANOL,IMIDAZOLIDINYL UREA, ETHYLPARABEN, METHYLPARABEN ,PROPYLPARABEN, FRAGRANCE (PARFUM), LINALOOL.</p>
+                </div>
+            </div>
+            <div class="analize-result-origin-comp">
+                <h3>Происхождение компонентов</h3>
+                <div class="analize-result-origin">
+                    <div class="analize-result-graph">
+                        <img class="analize-result-graph-image" src="images/graph2.svg">
+                        <p class="first-percent">75%</p>
+                        <p class="second-percent">25%</p>
+                    </div>
+                    <ul class="analize-result1-origin-list">
+                        <li>Природное</li>
+                        <li>Химическое</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="analize-result-aboutcomponent">
+                <h3>О компонентах (INCI)</h3>
+                <div class="analize-result1-component">
+                    <h4>ETHYLHEXYL METHOXYCINNAMATE — действующее вещество</h4>
+                    <p>Защищает кожу от вредного воздействия солнца</p>
+                    <div class="component-section">
+                        <ul class="component-list">
+                            <li>Аминокислота</li>
+                        </ul>
+                    </div>
+                    <p class="itog1">Безопасно</p>
+                </div>
+                <div class="see-all-comp">
+                    <p>Показать все компоненты</p>
+                    <img src="images/arrow-bot.svg" alt="Стрелка вниз">
+                </div>
+            </div>
+            <div class="analize-result-recomendation">
+                <h3>Рекомендации по использованию</h3>
+                <p>Данное косметическое средство опасно для вас. Лучше выбрать аналогичный безопасный продукт.</p>
+            </div>
+            <div class="analize-result-feedback">
+                <h3>Отзывы</h3>
+                <a href="#" class="arrow-icon-profile"><img src="images/arrow-right.svg" alt="Иконка стрелки" class="arrow-icon"></a>
+            </div>
+            <div class="analize-result-analog">
+                <h3>Аналогичные продукты</h3>
+                <div class="analize-result-list">
+                    <div class="analize-result-card">
+                        <img class="analize-result-img-cosmetics" src="images/cherry.png" alt="Изображение косметики">
+                        <a href="#" class="like"><img class="img-like" src="images/like.svg" alt="Иконка лайка"></a>
+                        <div class="analize-result-details">
+                            <h4 class="analize-result-name">Крем для рук и тела</h4>
+                            <p class="analize-result-description">LABORATORIUM Вишневый пирог</p>
+                            <div class="analize-result-about">
+                                <p>Подробнее</p>
+                                <img src="images/white-right-arrow.svg" alt="Стрелка" class="arrow-icon">
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="analize-result-card">
+                        <img class="analize-result-img-cosmetics" src="images/krem.png" alt="Изображение косметики">
+                        <a href="#" class="like"><img class="img-like" src="images/like.svg" alt="Иконка лайка"></a>
+                        <div class="analize-result-details">
+                            <h4 class="analize-result-name">Крем для лица</h4>
+                            <p class="analize-result-description">The Act<br> с витамином C</p>
+                            <div class="analize-result-about">
+                                <p>Подробнее</p>
+                                <img src="images/white-right-arrow.svg" alt="Стрелка" class="arrow-icon">
+                            </div>
+                        </div>           
+                    </div>
+                    <div class="analize-result-card">
+                        <img class="analize-result-img-cosmetics" src="images/adeleide.png" alt="Изображение косметики">
+                        <a href="#" class="like"><img class="img-like" src="images/like.svg" alt="Иконка лайка"></a>
+                        <div class="analize-result-details">
+                            <h4 class="analize-result-name">Крем для рук</h4>
+                            <p class="analize-result-description">ADELEIDE<br> UREA 30%</p>
+                            <div class="analize-result-about">
+                                <p>Подробнее</p>
+                                <img src="images/white-right-arrow.svg" alt="Стрелка" class="arrow-icon">
+                            </div>
+                        </div>           
+                    </div>
+                    <div class="analize-result-card">
+                        <img class="analize-result-img-cosmetics" src="images/comfort.png" alt="Изображение косметики">
+                        <a href="#" class="like"><img class="img-like" src="images/like.svg" alt="Иконка лайка"></a>
+                        <div class="analize-result-details">
+                            <h4 class="analize-result-name">Крем для тела</h4>
+                            <p class="analize-result-description">Comfort zone Tranquillity body</p>
+                            <div class="analize-result-about">
+                                <p>Подробнее</p>
+                                <img src="images/white-right-arrow.svg" alt="Стрелка" class="arrow-icon">
+                            </div>
+                        </div>           
+                    </div>
+                </div>
+            </div>
+            <button class="analize-result-exp-but">Консультация у эксперта</button>
+            <button class="analize-result-home-but">На главную</button>
+        </main>
+    </section>
+
+    <footer id="mobile-footer" class="mobile-footer">
         <nav class="footer-nav">
           <button class="footer-button footer-button-home active-footer-button">
             <img src="images/white-home.svg" alt="Главная" class="footer-icon">
@@ -436,6 +1759,13 @@
         </nav>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="sripts/script.js"></script>
+    <script src="sripts/script-feedback.js"></script>
+    <script src="sripts/script-safecosm.js"></script>
+    <script src="sripts/script-favorite.js"></script>
+    <script src="sripts/script-filter-search.js"></script>
+    <script src="sripts/script-storyanalize.js"></script>
+    <script src="sripts/script-comparison.js"></script>
+    <script src="sripts/script-registration.js"></script>
 </body>
 </html>

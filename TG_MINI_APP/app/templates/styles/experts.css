@@ -1,0 +1,52 @@
+.experts {
+    background-color: #F3F2F8;
+}
+
+.experts-header {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+    justify-content: center;
+    background-color: #F3F2F8;
+}
+
+.experts-header-title {
+    font-size: 32px;
+    font-weight: 510;
+}
+
+.experts-content{
+    padding-bottom: 114px;
+}
+
+.first-cons {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 24px;
+}
+
+.experts-search-container {
+    margin: 0;
+    margin-bottom: 24px;
+}
+
+.profile-image-exp {
+    width: 68px;
+    height: 68px;
+}
+
+.work-experience {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background-color: transparent;
+    border: 1px solid #A368F0;
+    color: #A368F0;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 4px 12px;
+    border-radius: 12px;
+}

@@ -1,0 +1,76 @@
+.modal-del-fav {
+  position: fixed;
+  z-index: 1000;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-del-story {
+  position: fixed;
+  z-index: 1000;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fdfbff;
+  padding: 30px;
+  border-radius: 14px;
+  text-align: center;
+  position: relative;
+  width: 280px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+.close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.close:hover {
+  transform: scale(1.2);
+}
+
+.modal-content h2 {
+  margin: 0 0 12px;
+  font-size: 20px;
+}
+
+.modal-content p {
+  margin: 0 0 12px;
+  font-size: 16px;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.modal-actions .delete,
+.modal-actions .cancel {
+  color: #b574f8;
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.modal-actions .delete:hover,
+.modal-actions .cancel:hover {
+  transform: scale(1.2);
+}

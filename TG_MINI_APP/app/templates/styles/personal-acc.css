@@ -1,0 +1,142 @@
+.personal-account-content {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 114px;
+    background-color: #F3F2F8;
+  }
+  
+  .header-personal-account {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+    justify-content: center;
+    background-color: #F3F2F8;
+  }
+
+  .header-personal-account-title {
+    font-size: 32px;
+    font-weight: 510;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+  
+  .hello-text {
+    margin: 0;
+  }
+  
+  .love-details {
+    margin: 0;
+    margin-top: 8px;
+  }
+  
+  .change-user-info {
+    margin-left: auto;
+    padding: 8px 12px;
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px solid #131313;
+    background: #F3F2F8;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+
+  .change-user-info:hover {
+    transform: scale(0.98);
+  }
+
+  .notification,
+  .language,
+  .story-analize,
+  .support-section,
+  .logout-section,
+  .politics,
+  .detail-analize,
+  .analize-result-feedback {
+    display: flex;
+    align-items: center;
+  }
+  
+  .notification h3,
+  .language h3,
+  .story-analize h3,
+  .reactions-header h3,
+  .support-section h3,
+  .logout-section h3,
+  .detail-analize h3 {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 8px;
+  }
+  
+  .toggle,
+  .change-language,
+  .arrow-icon-profile,
+  .redact {
+    margin-left: auto;
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+  }
+
+  .toggle:hover,
+  .change-language:hover,
+  .redact:hover,
+  .arrow-icon-profile:hover {
+    transform: scale(1.02);
+  }
+  
+  .notification,
+  .language,
+  .story-analize,
+  .reactions-section,
+  .allergens-section,
+  .support-section,
+  .logout-section {
+    margin-bottom: 24px;
+  }
+  
+  .language .change-language,
+  .story-analize a,
+  .support-section a,
+  .logout-section a {
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .reactions-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .reactions-list p,
+  .allergens-list li {
+    display: inline-block;
+    background-color: #A368F0;
+    color: #FBFBFB;
+    padding: 6px 12px;
+    border-radius: 12px;
+    font-size: 14px;
+    margin: 4px 4px 4px 0;
+  }
+  
+  .allergens-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .arrow-icon-left {
+    position: absolute;
+    left: 20px;
+    align-items: center;
+  }

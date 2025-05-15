@@ -1,0 +1,101 @@
+.comparison-result {
+    background-color: #F3F2F8;
+    padding-bottom: 262px;
+}
+
+.comparison-result-header {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+    justify-content: center;
+    background-color: #F3F2F8;
+    margin-bottom: 22px;
+}
+
+.comparison-result-header-title {
+    font-size: 32px;
+    font-weight: 510;
+    text-align: center;
+}
+
+.comparison-result-content{
+    padding-bottom: 114px;
+}
+
+.detail-analize {
+  margin-bottom: 24px;
+}
+
+.detail-analize h3 {
+    margin-left: 16px;
+}
+
+.detail-analize .arrow-icon {
+    margin-right: 16px;
+}
+
+.comparison-result-subtitle {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 16px;
+  margin-left: 16px;
+}
+
+.comparison-result-text {
+  margin-left: 16px;
+  font-size: 16px;
+  margin-bottom: 24px;
+}
+
+.first-comparison-result,
+.second-comparison-result {
+  border-radius: 12px;
+}
+
+.first-comparison-sostav,
+.second-comparison-sostav {
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-bottom: 12px;
+  background-color: #FBFBFB;
+  border-radius: 10px;
+  padding: 12px 16px;
+  font-size: 14px;
+  color: #131313;
+}
+
+.first-comparison-sostav p,
+.second-comparison-sostav p {
+  margin: 0;
+  height: 65px;
+  width: 320px;
+  padding-bottom: 12px;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.comparison-result-button {
+  width: 100%;
+  max-width: 360px;
+  margin-left: 16px;
+  padding: 16px 0;
+  background-color: #F3F2F8;
+  border: 1px solid #131313;
+  color: #131313;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 12px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.comparison-result-button:hover {
+    transform: scale(1.02);
+}

@@ -1,0 +1,83 @@
+.login {
+  background-color: #F3F2F8;
+  padding-bottom: 262px;
+  text-align: center;
+}
+
+.login h2 {
+  font-size: 32px;
+  font-weight: 510;
+  margin-bottom: 8px;
+  padding-top: 98px;
+}
+
+.login p {
+  font-size: 16px;
+  color: #131313;
+  margin-bottom: 32px;
+}
+
+.login form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.login input[type="text"],
+.login input[type="tel"] {
+  padding: 12px 16px;
+  margin-left: 16px;
+  margin-right: 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 12px;
+  background-color: #FBFBFB;
+}
+
+.login-button {
+  padding: 16px;
+  margin-left: 16px;
+  margin-right: 16px;
+  border: none;
+  border-radius: 12px;
+  background-color: #ADADAD;
+  color: #545454;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 58px;
+}
+
+.active-login-button {
+    background-color: #131313;
+    color: #FBFBFB;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.active-login-button:hover {
+    transform: scale(1.02);
+}
+
+.login-divider {
+  margin: 0;
+  margin-bottom: 16px;
+  font-size: 14px;
+  color: #545454;
+}
+
+.social-login {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.social-login img {
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.social-login img:hover {
+  transform: scale(0.9);
+}
