@@ -51,8 +51,8 @@
 
 .analize-pagephoto-choise {
   display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
+  gap: 1px;
+  flex-wrap: nowrap;
   padding-left: 16px;
   margin-bottom: 24px;
 }

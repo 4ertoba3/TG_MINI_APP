@@ -3,8 +3,8 @@ from aiogram import Bot, Dispatcher, types
 from aiogram.filters import Command
 from aiogram.types import WebAppInfo, ReplyKeyboardMarkup, KeyboardButton
 
-TOKEN = "7951045570:AAH0n7flc1q-Q6pVDs8kTCFfEglSPbnKtNs"
-WEB_APP_URL = "https://fd24-5-35-37-132.ngrok-free.app/"  # сюда вставляешь адрес своего FastAPI приложения
+TOKEN = "7821104503:AAHAvID8VmrZFf8Ci_jDzlMUwaFbyzaNEJQ"
+WEB_APP_URL = "https://4636-212-111-82-81.ngrok-free.app/"  # сюда вставляешь адрес своего FastAPI приложения
 
 # Инициализация бота и диспетчера
 bot = Bot(token=TOKEN)
